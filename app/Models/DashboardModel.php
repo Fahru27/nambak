@@ -19,7 +19,8 @@ class DashboardModel extends Model
 
     public function dataKeuangan()
     {
-        return DB::table('keuangan')->get();
+        return DB::table('keuangan')
+            ->get();
     }
 
     // public function dataIkan()
