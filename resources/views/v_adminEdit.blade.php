@@ -124,7 +124,7 @@
     
       <div class="row">
         <div class="col-12">
-          <a href="#" class="btn btn-secondary">Cancel</a>
+          <a href="/admin" class="btn btn-secondary">Cancel</a>
           <button type="submit" class="btn btn-primary">OK</button>
         </div>
       </div>
