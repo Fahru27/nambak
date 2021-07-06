@@ -17,4 +17,22 @@ use Illuminate\Support\Facades\Route;
 //     return view('v_dashboard');
 // });
 
-Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('guru');
+Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+Route::get('/Ph_Air', [App\Http\Controllers\PhController::class, 'index'])->name('ph_air');
+Route::post('/Ph_Air/insert', [App\Http\Controllers\PhController::class, 'insert'])->name('insert');
+Route::get('/aktivitas', [App\Http\Controllers\AktivitasController::class, 'index'])->name('aktivitas');
+Route::post('/aktivitas/insert', [App\Http\Controllers\AktivitasController::class, 'insert']);
+Route::get('/keuangan', [App\Http\Controllers\KeuanganController::class, 'index'])->name('keuangan');
+Route::post('/keuangan/insert', [App\Http\Controllers\KeuanganController::class, 'insert']);
+Route::get('/admin/delete/{id}', [App\Http\Controllers\AdminController::class, 'delete']);
+Route::get('/admin/edit/{id}', [App\Http\Controllers\AdminController::class, 'edit']);
+Route::post('/admin/update/{id}', [App\Http\Controllers\AdminController::class, 'update']);
+Route::get('/kolam/detail/{id}', [App\Http\Controllers\KolamController::class, 'detail']);
+
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
