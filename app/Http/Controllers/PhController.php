@@ -23,6 +23,7 @@ class PhController extends Controller
             'ph_air3' => $this->PhModel->dataPh3(),
             'ph_air4' => $this->PhModel->dataPh4(),
             'ph_air'  => $this->PhModel->dataPh(),
+            'ph'  => $this->PhModel->Ph(),
         ];
 
         // dd($data);

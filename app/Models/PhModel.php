@@ -50,6 +50,12 @@ class PhModel extends Model
             ->get();
     }
 
+    public function Ph()
+    {
+        return DB::table('ph_models')
+            ->get();
+    }
+
     public function addPh($data)
     {
         DB::table('ph_models')->insert($data);
