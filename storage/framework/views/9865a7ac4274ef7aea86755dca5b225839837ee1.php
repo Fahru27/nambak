@@ -1,0 +1,1 @@
+<?php /**PATH C:\xampp\htdocs\nambak\resources\views/v_register.blade.php ENDPATH**/ ?>
